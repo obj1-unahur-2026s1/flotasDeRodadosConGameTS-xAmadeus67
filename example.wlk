@@ -78,3 +78,33 @@ object traffic {
    }
    
 }
+
+
+// interiores
+
+object comodo {
+
+   method capacidad() = 5
+   method peso() = 700
+}
+
+object popular {
+
+   method capacidad() = 12
+   method peso() = 1000
+}
+
+
+//Motores 
+
+object pulenta {
+
+  method peso() = 800
+  method velocidad() = 130
+}
+
+object bataton {
+
+  method peso() = 500
+  method velocidad() = 80
+}
