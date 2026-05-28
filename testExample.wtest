@@ -1,9 +1,81 @@
-import example.pepita
+import autos.*
+import dependecias.*
 
-describe "group of tests for pepita" {
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
-  }
+
+describe "test etapa 1 con 2 dependencias" {
+   const deportes = new Dependencia(empleados = 45)
+   const cultura = new Dependencia(empleados = 31)
+   var cachito = new Corsa(color =  "rojo")
+   
+   method initialize() {
+      deportes.agregar(cachito)
+      deportes.agregar(new Corsa(color="azul"))
+      deportes.agregar(new Corsa(color="azul"))
+      deportes.agregar(new kwid(tieneTanqueAdicional = true))
+      deportez.agregar(new AutoEspecial(
+capacidad = 5,
+velocidad = 160,
+peso = 1200,
+color = "beige"
+))
+cultura.agregar(cachito)
+cultura.agregar(new kwid(tieneTanqueAdicional = true))
+cultura.agregar(new kwid(tieneTanqueAdicional = true))
+cultura.agregar(new kwid(tieneTanqueAdicional = false))
+cultura.agregar(traffic)
+traffic.cambiarInterior(popular)
+traffic.cambiarMotor(bataton)
+   }
+
+
+  test "peso total de flota de dependencia deportes es de 680"
+
+assert.equals(6450, deportes.pesoTotalFlota())
+
+test "capacidad total de flota de dependencia deportes es de 25"
+
+assert.equals(25, deportes.capacidadTotalFlota())
+ 
+test "la flota de deportes esta bien equipada"
+
+assert.equals(true, deportes.estaBienEquipada())
+
+test "la capacidad total en color azul de la flota de deportes es"
+
+assert.equals(00, deportes.capacidadTotalEnColor(azul))
+
+test "el color del rodado mas rapido de la flota de deportes es"
+
+assert.equals(color, deportes.colorDelRodadoMasRapido())
+
+test "la flota de deportes es grande"
+
+assert.equals(true, deportes.esGrande())
+
+}
+
+// TEST 2DA ETAPA
+
+describe "2da etapa" {
+
+Method initialize() {
+   pedido1.agregarColorIncompatible(negro)
+   pedido1.agregarColorIncompatible(azul)
+   const pedido1 = new Pedido(
+      distancia = 960,
+      tiempoMaximo = 8,
+      cantidadPasajeros = 4
+      )
+ }
+   test "cachito puede satisfacer este pedido1"
+
+assert.equals(true, pedido1.puedeSatisfacerlo(cachito))
+
+test "agregamos el color rojo o 2 pasajeros y cachito ya no puede satisfacer el pedido"
+
+pedido1.agregarColorIncompatible(rojo)
+
+assert.equals(false, pedido1.puedeSatisfacerlo(cachito))
 
 }
