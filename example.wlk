@@ -24,6 +24,20 @@ object corsaRojo {
     method peso() = 1300
 }
 
+class AutoEspecial {
+
+  const velocidad
+  const peso
+  const capacidad 
+  var color
+  method capacidad() = capacidad 
+  method velocidad() = velocidad
+  method peso() = peso
+  method color() = color 
+  method pintarDe(unColor) {color = unColor} 
+  
+}
+
 */
 
 class Corsa {
