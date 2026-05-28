@@ -1,3 +1,5 @@
+import autos.*
+
 class Dependencia {
   const flota = #{}
   const pedidos = #{}
